@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from tensorflow.python.framework import ops
 from tensorflow.python.ops import gen_math_ops
 
