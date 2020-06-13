@@ -4,33 +4,30 @@
 
 Multidimensional Contrast Limited Adaptive Histogram Equalization (MCLAHE) is a multidimensional extension of the
 contrast enhancement procedure CLAHE for images. It can be applied to datasets with an arbitrary number of dimensions.
-It is implemented in Tensorflow. Hence, it can be run on multiple CPUs or other hardware accelerators such as GPUs.
+This repository comprises an implementation in Tensorflow and one in NumPy only. Both can be run on multiple CPUs, and
+the Tensorflow implementation works with other hardware accelerators such as GPUs as well.
 
 
 ## Installation
 
-You can install `mclahe` directly using pip:
+The Tensorflow implementation of the package can be installed via pip
+
 ```
-pip install --upgrade git+https://github.com/VincentStimper/mclahe.git
+pip install --upgrade https://github.com/VincentStimper/mclahe/archive/master.zip
 ```
-Alternatively, you can first download or clone the repository on your computer via
+
+To install the NumPy version, run
+
 ```
-git clone https://github.com/VincentStimper/mclahe.git
-```
-then navigate into the folder and install it via
-```
-pip install --upgrade .
-```
-or 
-```
-python setup.py install
+pip install --upgrade https://github.com/VincentStimper/mclahe/archive/numpy.zip
 ```
 
 ### Requirements
 
-The main package requires `numpy` and `tensorflow`. `tensorflow` needs to be installed manually depending on the hardware
-in use. A comprehensive installation guide is given at the [Tensorflow webpage](https://www.tensorflow.org/install).
-For the sample notebook, `matplotlib` is required as well. 
+The main package requires `numpy` and `tensorflow`. `tensorflow` needs to be installed manually depending on the
+hardware in use. Currently, the package only supports `tensorflow` 1.14, but a update to 2.0 is work in progress.
+A comprehensive installation guide is given at the [Tensorflow webpage](https://www.tensorflow.org/install).
+For the NumPy version, only `numpy` needs to be installed. The example notebook requires `matplotlib` in addition. 
 
 
 ## Sample datasets
@@ -92,16 +89,17 @@ on the GPU.
 ## Citation
 
 If you are using this package within your own projects, please cite it as
-> Vincent Stimper, Stefan Bauer, Ralph Ernstorfer, Bernhard Schölkopf, and R. Patrick Xian: Multidimensional Contrast
-> Limited Adaptive Histogram Equalization, arXiv: 1906.11355, 2019.
+> V. Stimper, S. Bauer, R. Ernstorfer, B. Schölkopf and R. P. Xian, "Multidimensional Contrast Limited Adaptive Histogram Equalization," in IEEE Access, vol. 7, pp. 165437-165447, 2019.
 
 Bibtex code
 ```
-@Misc{Stimper2019,
-  author = {Stimper, Vincent and Bauer, Stefan and Ernstorfer, Ralph
-            and Sch{\"o}lkop, Bernhard and Xian, R. Patrick},
-  title  = {Multidimensional Contrast Limited Adaptive Histogram Equalization},
-  year   = {2019},
-  eprint = {arXiv: 1906.11355},
+@article{Stimper2019,
+    author={V. {Stimper} and S. {Bauer} and R. {Ernstorfer} and B. {Schölkopf} and R. P. {Xian}},
+    journal={IEEE Access},
+    title={Multidimensional Contrast Limited Adaptive Histogram Equalization},
+    year={2019},
+    volume={7}, 
+    pages={165437-165447},
+    doi={10.1109/ACCESS.2019.2952899},
 }
 ```
