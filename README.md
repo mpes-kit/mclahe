@@ -25,7 +25,7 @@ pip install --upgrade https://github.com/VincentStimper/mclahe/archive/numpy.zip
 ### Requirements
 
 The main package requires `numpy` and `tensorflow`. `tensorflow` needs to be installed manually depending on the
-hardware in use. The package supports `tensorflow` 2.0.
+hardware in use. The package supports `tensorflow` 2.0 and later versions.
 A comprehensive installation guide is given at the [Tensorflow webpage](https://www.tensorflow.org/install).
 For the NumPy version, only `numpy` needs to be installed. The example notebook requires `matplotlib` in addition. 
 
