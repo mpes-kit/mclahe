@@ -13,7 +13,7 @@ the Tensorflow implementation works with other hardware accelerators such as GPU
 The Tensorflow implementation of the package can be installed via pip
 
 ```
-pip install --upgrade https://github.com/VincentStimper/mclahe/archive/master.zip
+pip install --upgrade https://github.com/mpes-kit/mclahe/archive/master.zip
 ```
 
 To install the NumPy version, run
@@ -25,7 +25,7 @@ pip install --upgrade https://github.com/VincentStimper/mclahe/archive/numpy.zip
 ### Requirements
 
 The main package requires `numpy` and `tensorflow`. `tensorflow` needs to be installed manually depending on the
-hardware in use. Currently, the package only supports `tensorflow` 1.14, but a update to 2.0 is work in progress.
+hardware in use. The package supports `tensorflow` 2.0.
 A comprehensive installation guide is given at the [Tensorflow webpage](https://www.tensorflow.org/install).
 For the NumPy version, only `numpy` needs to be installed. The example notebook requires `matplotlib` in addition. 
 
