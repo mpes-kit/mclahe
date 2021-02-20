@@ -1,5 +1,7 @@
 # Multidimensional Contrast Limited Adaptive Histogram Equalization
 
+## Note: for the latest version of the software please visit [VincentStimper/mclahe](https://github.com/VincentStimper/mclahe).
+
 ## Introduction
 
 Multidimensional Contrast Limited Adaptive Histogram Equalization (MCLAHE) is a multidimensional extension of the
