@@ -151,7 +151,8 @@ def mclahe(x, kernel_size=None, n_bins=128, clip_limit=0.01, adaptive_hist_range
 
         # Setting up tf session
         if use_gpu:
-            config = None
+            config = tf.ConfigProto()
+            config.gpu_options.allow_growth = True
         else:
             config = tf.ConfigProto(device_count={"GPU": 0})
 
